@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+// Bootstrap
+@import "public/components/components/components/material/scss/core/bootstrap/functions";
+@import "public/components/components/components/material/scss/core/bootstrap/variables";
+@import "public/components/components/components/material/scss/core/bootstrap/rfs";
+
+// CORE
+@import "public/components/components/components/material/scss/core/mixins";
+// Your custom variables
+@import "custom-variables";
+@import "public/components/components/components/material/scss/core/colors";
+@import "public/components/components/components/material/scss/core/variables";
+@import "public/components/components/components/material/scss/core/global";
+@import "public/components/components/components/material/scss/core/helpers";
+@import "public/components/components/components/material/scss/core/typography";
+@import "public/components/components/components/material/scss/core/masks";
+@import "public/components/components/components/material/scss/core/waves";
+
+// FREE
+@import "public/components/components/components/material/scss/free/animations-basic";
+@import "public/components/components/components/material/scss/free/modules/animations-extended/module";
+@import "public/components/components/components/material/scss/free/buttons";
+@import "public/components/components/components/material/scss/free/cards";
+@import "public/components/components/components/material/scss/free/dropdowns";
+@import "public/components/components/components/material/scss/free/input-group";
+@import "public/components/components/components/material/scss/free/navbars";
+@import "public/components/components/components/material/scss/free/pagination";
+@import "public/components/components/components/material/scss/free/badges";
+@import "public/components/components/components/material/scss/free/modals";
+@import "public/components/components/components/material/scss/free/carousels";
+@import "public/components/components/components/material/scss/free/forms";
+@import "public/components/components/components/material/scss/free/msc";
+@import "public/components/components/components/material/scss/free/footers";
+@import "public/components/components/components/material/scss/free/list-group";
+@import "public/components/components/components/material/scss/free/tables";
+@import "public/components/components/components/material/scss/free/depreciated";
+@import "public/components/components/components/material/scss/free/steppers";
+@import "public/components/components/components/material/scss/free/loader";
+@import "public/components/components/components/material/scss/free/treeview";
+// Free addons
+// @import "addons/datatables";
+// @import "addons/datatables-select";
+// @import "addons/directives";
+// @import "addons/hierarchical-display";
+// @import "addons/flags";
+// @import "addons/rating";
+
+// Your custom styles
+@import "custom-styles";
