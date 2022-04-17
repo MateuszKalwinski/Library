@@ -70,6 +70,7 @@ class BookController extends Controller
             $book->description = $request->descripion;
             $book->borrowed = $request->borrowed;
             $book->read = $request->read ?? null;
+            $book->user_id = auth()->id();
             $book->created_at = now();
             $book->updated_at = null;
             $book->save();

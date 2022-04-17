@@ -59,7 +59,7 @@ class BookRepository implements BookRepositoryInterface
 
     public function getBooksForDatatable()
     {
-        $countryForDatatable = Book::with('bookCategory.category')->whereNull('deleted_at')->get();
+        $countryForDatatable = Book::with('bookCategory.category')->whereNull('deleted_at')->where('user_id', auth()->id())->get();
 
         return $countryForDatatable;
     }

@@ -13,6 +13,7 @@ class Category extends Model
     public $timestamps = true;
     protected $fillable = [
         'name',
+        'user_id',
     ];
 
     public function BookCategory()

@@ -20,6 +20,8 @@ class CreateBooksTable extends Migration
             $table->string('author')->nullable();
             $table->boolean('read')->nullable();
             $table->string('borrowed')->nullable();
+            $table->unsignedBigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });

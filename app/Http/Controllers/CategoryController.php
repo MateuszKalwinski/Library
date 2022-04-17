@@ -29,7 +29,7 @@ class CategoryController extends Controller
 
     public function create()
     {
-        $categories = Category::all();
+        $categories = Category::where('user_id', \auth()->id())->whereNull('deleted_at')->get();
         return view('categories.create',
             ['title' => 'Dodaj kategorie',
                 'category' => [],
@@ -44,7 +44,7 @@ class CategoryController extends Controller
     }
 
     public function edit(Request $request, Category $category){
-        $categories = Category::all();
+        $categories = Category::where('user_id', \auth()->id())->whereNull('deleted_at')->get();
         return view('categories.edit',
             ['title' => 'Edytuj kategorie',
                 'category' => $category,

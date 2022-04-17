@@ -13,7 +13,7 @@ class CategoryRepository implements CategoryRepositoryInterface
 
     public function getCategories()
     {
-        $categories = Category::categories()->whereNull('deleted_at')->orderBy('name', 'ASC')->get();
+        $categories = Category::categories()->where('user_id', \auth()->id())->whereNull('deleted_at')->orderBy('name', 'ASC')->get();
 
         return $categories;
     }
@@ -23,6 +23,7 @@ class CategoryRepository implements CategoryRepositoryInterface
         try {
             Category::create([
                 'name' => $request->categoryName,
+                'user_id' => \auth()->id(),
                 'created_at' => Carbon::now('Europe/Warsaw'),
             ]);
         } catch (ValidationException $e) {

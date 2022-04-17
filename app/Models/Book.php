@@ -18,6 +18,7 @@ class Book extends Model
         'author',
         'read',
         'borrowed',
+        'user_id',
     ];
 
     public function bookCategory()
