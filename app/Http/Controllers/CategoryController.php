@@ -66,10 +66,12 @@ class CategoryController extends Controller
             throw $e;
         }
 
-        return redirect('categories/create')->with('status', 'Zaktualizowano kategorie!');    }
+        return redirect('categories/create')->with('status', 'Zaktualizowano kategorie!');
+    }
 
     public function destroy(Request $request, Category $category)
     {
+
         try {
             $category->delete();
         } catch (ValidationException $e) {
@@ -81,6 +83,5 @@ class CategoryController extends Controller
         }
 
         return redirect('categories/create')->with('status', 'Usunięto kategorie!');
-
     }
 }

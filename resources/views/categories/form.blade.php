@@ -1,7 +1,7 @@
 <div class="col-lg-12 col-md-12">
     <div class="mt-5">
         <div class="mt-5">
-            <p class="blue-text">Nazwa kategorii</p>
+            <p class="blue-text mb-0">Nazwa kategorii</p>
         </div>
         <div class="form-row">
             <div class="col-lg-6 col-md-6 col-sm-12">

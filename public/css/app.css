@@ -11327,7 +11327,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -22565,4 +22565,83 @@ table.table a {
 
 .column-visibility.md-form input[type=text]:not(.browser-default) {
   border-bottom: none !important;
+}
+
+.white-skin .primary-color, .white-skin ul.stepper li.active a .circle, ul.stepper li.active a .white-skin .circle, .white-skin ul.stepper li.completed a .circle, ul.stepper li.completed a .white-skin .circle {
+  background-color: #ad7aff !important;
+}
+
+.white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:hover, .white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:focus, .white-skin .navbar .navbar-nav .nav-item .dropdown-menu a:active {
+  background-color: #ad7aff;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #ff0053 !important;
+  border-color: #ffffff00;
+}
+
+.orange {
+  background-color: #ffc909 !important;
+}
+
+.blue-text {
+  color: #ad7aff !important;
+}
+
+.success-color {
+  background-color: #3ed7ac !important;
+}
+
+.md-form input:not([type]):focus:not([readonly]), .md-form input[type=text]:not(.browser-default):focus:not([readonly]), .md-form input[type=password]:not(.browser-default):focus:not([readonly]), .md-form input[type=email]:not(.browser-default):focus:not([readonly]), .md-form input[type=url]:not(.browser-default):focus:not([readonly]), .md-form input[type=time]:not(.browser-default):focus:not([readonly]), .md-form input[type=date]:not(.browser-default):focus:not([readonly]), .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]), .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .md-form input[type=tel]:not(.browser-default):focus:not([readonly]), .md-form input[type=number]:not(.browser-default):focus:not([readonly]), .md-form input[type=search]:not(.browser-default):focus:not([readonly]), .md-form input[type=phone]:not(.browser-default):focus:not([readonly]), .md-form input[type=search-md]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ad7aff;
+  box-shadow: 0 1px 0 0 #ad7aff;
+}
+
+.md-form input:not([type]):focus:not([readonly]) + label, .md-form input[type=text]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=password]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=email]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=url]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=time]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=date]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=tel]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=number]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=search]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=phone]:not(.browser-default):focus:not([readonly]) + label, .md-form input[type=search-md]:focus:not([readonly]) + label, .md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #ad7aff;
+}
+
+.select-wrapper.md-form > ul li label {
+  top: 0;
+  font-size: 0.9rem;
+  color: #ad7aff;
+  transform: none;
+}
+
+.select-wrapper:not(.md-outline) .select-dropdown:focus {
+  border-bottom: 1px solid #ad7aff;
+  box-shadow: 0 1px 0 0 #ad7aff;
+}
+
+.select-wrapper.active span.caret, .select-wrapper.active label.mdb-main-label {
+  color: #ad7aff;
+}
+
+.white-skin .btn-primary {
+  color: #fff;
+  background-color: #3ed7ac !important;
+  border: none;
+}
+
+.white-skin .btn-primary:not([disabled]):not(.disabled):active, .white-skin .btn-primary:not([disabled]):not(.disabled).active, .show > .white-skin .btn-primary.dropdown-toggle {
+  background-color: #3ed7ac !important;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.white-skin input[type=checkbox]:checked + label:before {
+  border-right: 2px solid #ad7aff;
+  border-bottom: 2px solid #ad7aff;
+}
+
+alert-primary {
+  color: #8f4aff;
+  background-color: #ad7aff40;
+  border-color: #ad7aff40;
+}
+
+.alert-danger {
+  color: #ff0074;
+  background-color: #ff008e1f;
+  border-color: #ff008e1f;
 }

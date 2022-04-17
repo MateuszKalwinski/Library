@@ -15,16 +15,22 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //        POST INTERFACE
-        $this->app->bind(\App\Inposter\Interfaces\PostRepositoryInterface::class,function()
+        //        BOOK INTERFACE
+        $this->app->bind(\App\Inposter\Interfaces\BookRepositoryInterface::class,function()
         {
-            return new \App\Inposter\Repositories\PostRepository();
+            return new \App\Inposter\Repositories\BookRepository();
         });
 
         //        CATEGORY INTERFACE
         $this->app->bind(\App\Inposter\Interfaces\CategoryRepositoryInterface::class,function()
         {
             return new \App\Inposter\Repositories\CategoryRepository();
+        });
+
+        //        AUTHOR INTERFACE
+        $this->app->bind(\App\Inposter\Interfaces\AuthorRepositoryInterface::class,function()
+        {
+            return new \App\Inposter\Repositories\AuthorRepository();
         });
     }
 

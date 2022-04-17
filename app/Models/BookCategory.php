@@ -5,20 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PostCategory extends Model
+class BookCategory extends Model
 {
     use HasFactory;
 
-    public $table = 'post_categories';
+    public $table = 'book_categories';
     public $timestamps = true;
     protected $fillable = [
-        'post_id',
+        'book_id',
         'category_id',
     ];
 
-    public function post()
+    public function book()
     {
-        return $this->belongsTo(Post::class, 'post_id');
+        return $this->belongsTo(Book::class, 'book_id');
     }
 
     public function category()

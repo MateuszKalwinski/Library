@@ -19,8 +19,6 @@
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="{{asset('components/material/css/mdb.min.css')}}">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons" >
-    <!-- Image uploader -->
-    <link rel="stylesheet" href="{{asset('components/image-uploader/dist/image-uploader.min.css')}}">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="{{asset('components/material/css/style.css')}}">
     <!-- SLICK (optional) -->
@@ -36,7 +34,7 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel  grey lighten-5">
         <div class="container">
-            <a href="{{url('posts')}}" class="ml-4 mr-4 pr-2 pl-2 logo-menu-link text-dark text-decoration-none">
+            <a href="{{url('books')}}" class="ml-4 mr-4 pr-2 pl-2 logo-menu-link text-dark text-decoration-none">
                 <img src="{{ asset('img/logo.png') }}" class="logo-menu-image" alt="logo">
                 Biblioteczka
             </a>
@@ -57,23 +55,27 @@
 
                     @else
                         <li class="nav-item mr-3">
-                            <a class="nav-link btn btn-sm primary-color btn-rounded pl-3 pr-3 text-white  waves-effect waves-light rgba-white-slight text-transform-none m-0"
+                            <a class="nav-link btn btn-sm primary-color btn-rounded pl-3 pr-3 mb-1 text-white  waves-effect waves-light rgba-white-slight text-transform-none m-0"
+                               href="{{route('books')}}">{{ __('Moje książki') }}</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link btn btn-sm primary-color btn-rounded pl-3 pr-3  mb-1 text-white  waves-effect waves-light rgba-white-slight text-transform-none m-0"
+                               href="{{route('books-create')}}">{{ __('Dodaj książkę') }} <i class="fas fa-plus ml-2"></i></a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link btn btn-sm primary-color btn-rounded pl-3 pr-3 mb-1 text-white  waves-effect waves-light rgba-white-slight text-transform-none m-0"
                                href="{{route('categories-create')}}">{{ __('Dodaj kategorię') }} <i class="fas fa-plus ml-2"></i></a>
                         </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link btn btn-sm primary-color btn-rounded pl-3 pr-3 text-white  waves-effect waves-light rgba-white-slight text-transform-none m-0"
-                               href="{{route('categories-create')}}">{{ __('Dodaj autora') }} <i class="fas fa-plus ml-2"></i></a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link btn btn-sm primary-color btn-rounded pl-3 pr-3 text-white  waves-effect waves-light rgba-white-slight text-transform-none m-0"
-                               href="{{route('post-create')}}">{{ __('Dodaj post') }} <i class="fas fa-plus ml-2"></i></a>
-                        </li>
+
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('change-password') }}">
+                                    {{ __('Zmień hasło') }}
+                                </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -107,6 +109,12 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="{{asset('components/material/js/mdb.min.js')}}"></script>
 
+<script type="text/javascript" src="{{asset('components/material/js/addons/datatables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('components/material/js/addons/datatables-select.min.js')}}"></script>
+
 <script src="{{ asset('js/app.js') }}"></script>
+
+@yield('script')
+
 </body>
 </html>

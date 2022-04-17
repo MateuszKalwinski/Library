@@ -20,7 +20,6 @@ class CategoryRepository implements CategoryRepositoryInterface
 
     public function store($request)
     {
-
         try {
             Category::create([
                 'name' => $request->categoryName,
@@ -35,6 +34,5 @@ class CategoryRepository implements CategoryRepositoryInterface
         }
 
         return redirect('categories/create')->with('status', 'Zapisano kategorie!');
-
     }
 }

@@ -15,9 +15,9 @@ class Category extends Model
         'name',
     ];
 
-    public function PostCategory()
+    public function BookCategory()
     {
-        return $this->hasMany('App\PostCategory', 'category_id');
+        return $this->hasMany('App\BookCategory', 'category_id');
     }
 
     public function scopeCategories($query)

@@ -10,12 +10,11 @@
                     </div>
                     @include('helper.message')
                 </div>
-                <form class="mb-5" method="POST" action="{{route('categories-update', $category->id)}}">
+                <form class="mb-5" method="POST" action="{{route('books-store')}}">
                     @csrf
-                    @method('PATCH')
-
+                    @method('POST')
+                    @include('books.form', $book)
                 </form>
-                @include('categories.table', $categories)
             </div>
         </div>
     </div>
