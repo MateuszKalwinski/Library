@@ -1,32 +1,10 @@
 
-![alt text](https://raw.githubusercontent.com/MateuszKalwinski/newspaper/main/public/img/logo.png)
+![alt text](https://raw.githubusercontent.com/MateuszKalwinski/library/main/public/img/logo.png)
 ##### Możesz obejrzeć aplikację pod linkiem
-# [Newspaper](http://newspaper.kalwinscy.pl/)
+# [Biblioteczka](http://biblioteczka.kalwinscy.pl/)
 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-## Funkcje
-
-- Lista dodanych postów
-- Dodawanie postów z kategoriami
-- Dodawanie kategorii
-- Panel Logowania
-- API
-- REDIS
-
-
-## Technologie
-
-Dillinger uses a number of open source projects to work properly:
-
-- LARAVEL
-- NPM
-- NODE
-- REDIS
-- Material Design for Bootstrap
-- jQuery
-
 
 ## Instalacja
 
@@ -34,7 +12,7 @@ Projekt wymaga node w wersji 15.2.1 oraz NPM w wersji 7.0.13
 
 
 ```sh
-git clone https://github.com/MateuszKalwinski/newspaper.git
+git clone https://github.com/MateuszKalwinski/library.git
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -54,26 +32,6 @@ wejdź na adres
 ```sh
 127.0.0.1:8000
 ```
-
-## API
-Pobranie postów nie wymaga logowania
-api/posts - zwróci wszytskie posty - METODA GET
-
-```sh
-http://newspaper.kalwinscy.pl/api/posts
-http://127.0.0.1:8000/api/posts
-```
-
-api/posts/id - zwróci posty z przypisanym id kategorii - METODA GET
-
-poniższy przykład zwróci wszystkie posty z kategorii motoryzacja
-```sh
-http://newspaper.kalwinscy.pl/api/posts/1
-http://127.0.0.1:8000/api/posts/1
-```
-
-
-
 
 ## License
 
