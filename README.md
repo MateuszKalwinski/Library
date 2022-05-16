@@ -4,7 +4,7 @@
 # [Biblioteczka](http://biblioteczka.kalwinscy.pl/)
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](http://biblioteczka.kalwinscy.pl/login)](http://biblioteczka.kalwinscy.pl/login)
 
 ## Instalacja
 
