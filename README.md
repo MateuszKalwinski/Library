@@ -4,8 +4,6 @@
 # [Biblioteczka](http://biblioteczka.kalwinscy.pl/)
 
 
-[![Build Status](http://biblioteczka.kalwinscy.pl/login)](http://biblioteczka.kalwinscy.pl/login)
-
 ## Instalacja
 
 Projekt wymaga node w wersji 15.2.1 oraz NPM w wersji 7.0.13
